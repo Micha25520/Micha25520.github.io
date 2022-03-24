@@ -2,41 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Something Cool</title>
-    <style media="screen">
-      div {
-        border: 1px solid black;
-        margin: 4px;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function openNav() {
+        var navBox = document.getElementById('menu');
+        navBox.style.display = 'block';
       }
-      #content {
-        background-color: #185cdb;
+      function closeNav() {
+        var navBox = document.getElementById('menu');
+        navBox.style.display = 'none';
       }
-      #headerBox {
-        background-color: #0eed16;
-      }
-      .segment {
-        background-color: #f5332c;
-      }
-    </style>
+    </script>
+    <h1>Who would win in a fight?</h1>
+    <img src="img/abraham_lincoln.jfif" class="rightimg">
+    <img src="img/george_washington.jfif" class="rightimg">
+    <h2>About Abraham Lincoln</h2>
+    <p>Abraham Lincoln used to fight, he has only lost once in his carrer and had beat everyone else.</p>
+    <h2>About George Washington</h2>
+    <p>George Washington is well known for his commanding skills in the American Revolution, he has fought with a sword but not his fists.</p>
   </head>
   <body>
-    <div id="content">
-      <div id="headerBox">
-        <h1>This Is Something Cool</h1>
-
+    <div id="openMenu" onclick="openNav()">
+      ☰
+    </div>
+    <div id="menu">
+      <div id="closeMenu" class="menuItem" onclick="closeNav()">
+        <a href="#">Close Menu</a>
       </div>
-      <div class="segment">
-        <img src="img/first_picture.jpg" alt="loaf of bread"width="800 height="800"">
-        <p>
-          Hello, this is my web page
-        </p>
-
+      <div class="menuItem">
+        <a href="index.html">Home</a>
       </div>
-      <div class="segment">
-        <h2>Get To School 3</h2>
-        <a href="game.html">Play Get To School 3</a>
-
+      <div class="menuItem">
+        <a href="game/game.html">Get To School</a>
       </div>
-<div>
+      <div class="menuItem">
+        <a href="jsfighter/index.html">JSFighter</a>
+    </div>
+    <h4>Hint: Abraham Lincoln would win</h4>
   </body>
 </html>
